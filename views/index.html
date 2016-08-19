@@ -51,7 +51,7 @@
         <div class="panel-body" id="itinerary">
           <div>
             <h4>My Hotel</h4>
-            <ul class="list-group" data-type="hotel">
+            <ul class="list-group" data-type="hotel" id="hotel-list">
               <!-- <div class="itinerary-item">
                 <span class="title">Andaz Wall Street</span>
                 <button class="btn btn-xs btn-danger remove btn-circle">x</button>
@@ -60,7 +60,7 @@
           </div>
           <div>
             <h4>My Restaurants</h4>
-            <ul class="list-group" data-type="restaurants">
+            <ul class="list-group" data-type="restaurants" id="restaurant-list">
               <!-- <div class="itinerary-item">
                 <span class="title">Bouley</span>
                 <button class="btn btn-xs btn-danger remove btn-circle">x</button>
@@ -69,7 +69,7 @@
           </div>
           <div>
             <h4>My Activities</h4>
-            <ul class="list-group" data-type="activities">
+            <ul class="list-group" data-type="activities" id="activity-list">
               <!-- <div class="itinerary-item">
                 <span class="title">Mahayana Buddhist Temple Association</span>
                 <button class="btn btn-xs btn-danger remove btn-circle">x</button>
@@ -81,11 +81,11 @@
     </div>
   </div>
 </div>
-<script>
+<!--<script>
   {% autoescape false %}
   var hotels = {{ templateHotels | json }};
   var restaurants = {{ templateRestaurants | json }};
   var activities = {{ templateActivities | json }};
   {% endautoescape %}
-</script>
+</script>-->
 {% endblock %}
